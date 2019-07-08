@@ -1,0 +1,10 @@
+{
+  "projects": {
+    "default": "reto-intercorp-retail",
+    "intercorp": "red-social2-66e9a",
+    "reto": "myburger-d74f2",
+    "l": "red-social2-66e9a",
+    "ret": "myburger-d74f2",
+    "reto-intercorp": "reto-intercorp"
+  }
+}
