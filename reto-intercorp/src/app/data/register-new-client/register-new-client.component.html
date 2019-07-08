@@ -1,0 +1,52 @@
+
+
+<div class="margin:auto">
+    <div style="margin-top: 40px;padding:180px 100px;font-family: 'Lato', sans-serif;">
+<form >
+    <div class="form-group row">
+      
+        <label for="fname" class="col-sm-2 col-form-label">Nombres</label>
+        <div class="col-sm-10">
+          <input #name type="text"  class="form-control" id="fname" >
+        </div>
+    </div>
+     <div class="form-group row" >
+        <label for="flastname" class="col-sm-2 col-form-label">Apellidos</label>
+        <div class="col-sm-10">
+          <input #lastname type="text"  class="form-control" id="flastname" >
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="fage" class="col-sm-2 col-form-label">Edad</label>
+        <div class="col-sm-10">
+            <input #age type="number"  class="form-control" id="fage" >
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="fbirthdate" class="col-sm-2 col-form-label">Fecha de Nacimiento</label>
+        <div class="col-sm-10">
+            <input #birthdate type="date"  class="form-control" id="fbirthdate" >
+        </div>
+    </div>
+    
+</form>
+<button type="submit"  class="btn  btn-dark btn-lg btn-block" (click)="sendNewRegister(name.value,lastname.value,age.value,birthdate.value)">Registrarse</button>
+</div>
+
+</div >
+
+<app-statistics></app-statistics>
+        
+<!-- </form> -->
+
+
+
+
+
+
+
+
+
+
+
+

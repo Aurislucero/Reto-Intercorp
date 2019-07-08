@@ -1,0 +1,27 @@
+
+
+<div class="margin:auto">
+<div style="margin-top: 40px;padding:200px 100px">
+    <table class= "table " >
+            <thead class="table-dark text-center">
+                <tr>
+                    <th scope="col" >N°</th>
+                    <th scope="col" >Nombre</th>
+                    <th scope="col" >Apellido</th>
+                    <th scope="col" >Edad</th>
+                    <th scope="col" >Fecha de Nacimiento</th>
+                </tr>
+            </thead>
+            <tbody class="text-center">
+                <tr css="table" scope="row" *ngFor="let client of clients; let i =index  ">
+                    <td scope="row" >{{i + 1 }}</td>
+                    <td>{{client.name}}</td>
+                    <td>{{client.lastname}}</td>
+                    <td>{{client.age}}</td>
+                    <td>{{client.birthdate}}</td>
+                </tr>
+            </tbody>
+    </table>
+</div>
+</div>
+        
