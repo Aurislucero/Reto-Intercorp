@@ -1,6 +1,6 @@
 
 <div class="margin:auto">
-    <div style="margin-top: 40px;padding:270px 100px">
+    <div style="margin-top: 40px;padding:70px 200px">
         <table class= "table " >
                 <thead class="table-dark text-center">
                     <tr>
@@ -17,10 +17,57 @@
                 </tbody>
         </table>
     </div>
+
+
+    <div style="text-align:center;">
+        <h1 >PROMEDIO DE ESPERANZA DE VIDA EN PERÚ </h1>
+    </div>
+    <div style="padding:35px ">
+        <img style="text-align:center;display:flex;width:70px;height:30px;margin: 10px" src="../../../assets/img/pe-flag.gif" alt="">
+
+        <p style="text-align:justify;">
+            El Instituto Nacional de Estadística e Informática (INEI) dio a conocer que la esperanza de vida de la población peruana aumentó en 15 años, en las últimas cuatro décadas, por lo que, de mantenerse constantes las condiciones de mortalidad del año 2015, los peruanos y las peruanas vivirán, en promedio,<b> 74,6 años</b>  (72,0 años los hombres y 77,3 las mujeres). Asimismo, informó que este  indicador se modifica en función de las condiciones predominantes de mortalidad cuya incidencia aumenta o disminuye el riesgo de morir. 
+        </p>
+        <img style="text-align:center;display:flex;width:150px;height:70px" src="../../../assets/img/logo_inei_left.png" alt="INEI">
+    </div>
+    
+    <!-- lista de clientes + año de muerte -->
+    <div class="margin:auto">
+        <div style="margin-top: 40px;padding:10px 100px">
+            <table class= "table " >
+                    <thead class="table-dark text-center">
+                        <tr>
+                            <th scope="col" >N°</th>
+                            <th scope="col" >Nombre</th>
+                            <th scope="col" >Apellido</th>
+                            <th scope="col" >Edad</th>
+                            <th scope="col" >Fecha de Nacimiento</th>
+                            <th scope="col" >Año de Fallecimiento</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-center">
+                        <tr css="table" scope="row" *ngFor="let client of clients; let i =index  ">
+                            <td scope="row" >{{i + 1 }}</td>
+                            <td>{{client.name}}</td>
+                            <td>{{client.lastname}}</td>
+                            <td>{{client.age}}</td>
+                            <td>{{client.birthdate}}</td>
+                            <td>{{dayDeath}}</td>
+                            <!-- <td>{{client.death}}</td> -->   
+                        </tr>
+                        
+                            
+                       
+                    </tbody>
+            </table>
+        </div>
+        </div>
+    <!-- end lista de clientes + año de muerte -->
+    
+    <!-- <div>
+        <canvas id="barChart"></canvas>
+    </div> -->
 </div>
 
-<div>
-    <canvas id="barChart"></canvas>
-</div>
 
 

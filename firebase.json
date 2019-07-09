@@ -14,7 +14,7 @@
     "source": "functions"
   },
   "hosting": {
-    "public": "dist/reto-intercorp",
+    "public": "reto-intercorp/dist/reto-intercorp",
     "ignore": [
       "firebase.json",
       "**/.*",

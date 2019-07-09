@@ -18,7 +18,7 @@ export class RegisterNewClientComponent implements OnInit {
   }
 
   sendNewRegister(name:string, lastname:string, age:number , birthdate: number) {
-    this.firestore.sendValueClient(name,lastname,age,birthdate);
+    this.firestore.sendValueClient(name,lastname , age , birthdate);
     alert('se envió correctamente');
     return this.router.navigateByUrl('/');
     
